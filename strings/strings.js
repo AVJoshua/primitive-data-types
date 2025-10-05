@@ -208,8 +208,8 @@ let stringsAreEqualIgnoreCase = checkEqualityIgnoreCase1.toLowerCase() === check
 let replaceMe = "John just moved to Montreal. John will be meeting his roomate soon."
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
-replaceMe = "Michael just moved to Montreal. Michael will be meeting his roomate soon."
-let replacedString = replaceMe
+
+let replacedString = replaceMe.replace(/John/g, "Michael")
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -225,8 +225,8 @@ let replacedString = replaceMe
 let removeMe = "We will going to be leaving at noon sharp."
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
-removeMe = "We will be leaving at noon sharp."
-let removedString = removeMe
+
+let removedString = removeMe.replace("going to ", "")
 
 ////////////////////////////////////////////////////////////////////////
 
